@@ -20,17 +20,30 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <div className="text-3xl font-semibold">
-          Istirahat codingnya sebentar, like jika suka
+        {/* <Image */}
+        {/*   className="dark:invert" */}
+        {/*   src="https://nextjs.org/icons/next.svg" */}
+        {/*   alt="Next.js logo" */}
+        {/*   width={180} */}
+        {/*   height={38} */}
+        {/*   priority */}
+        {/* /> */}
+        <div className="text-3xl font-semibold -mt-5">
+          Rio Juniyantara Putra
         </div>
+        <div className="text-md font-semibold -mt-6">Software Developer</div>
+        {/* about me */}
+
+        <div className="text-xl font-semibold">About me</div>
+
+        <p className="text-sm font-[family-name:var(--font-geist-mono)]">
+          I am a passionate and versatile developer with over +6 years of
+          JavaScript experience and a constant interest in learning new
+          technologies. I am currently learning the path to be a DevOps and
+          master tools or practices such as "Linux, AWS, CI/CD, Docker,
+          Kubernetes, Jenkins and Terraform" to perform cost optimized, reliable
+          and secure full software delivery and maintenance.
+        </p>
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
             Get started by editing{" "}
