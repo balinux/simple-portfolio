@@ -382,22 +382,32 @@ export default function Home() {
 
         <div className="lg:grid grid-cols-2 gap-4">
           <div className=" flex items-center justify-center p-4">
-            <div className="relative">
+            <div className="relative ">
               {/* Thick solid shadow effect */}
               <div className="absolute inset-0 bg-zinc-700 rounded-[2rem] -rotate-1 translate-x-4 translate-y-4" />
 
               {/* Main card */}
-              <Card className="relative w-full max-w-4xl rounded-[2rem] border-0 bg-gradient-to-b from-zinc-800 to-zinc-900 p-8 overflow-hidden">
+              <Card className="relative w-full max-w-4xl rounded-[2rem] border-2 border-zinc-700 bg-gradient-to-b from-zinc-800 to-zinc-900 p-8 overflow-hidden">
                 <div className="grid gap-6">
-                  <h1 className="text-4xl md:text-6xl font-bold text-zinc-100">
+                  <div className=" overflow-hidden rounded-lg">
+                    <Image
+                      className="dark:invert rounded-lg cursor-pointer overflow-hidden transition transform hover:scale-105"
+                      src="/crypto.jpg"
+                      alt="Vercel logomark"
+                      width={900}
+                      height={200}
+                    />
+                  </div>
+
+                  <h1 className="text-xl md:text-2xl text-zinc-100">
                     Website Template
                   </h1>
-                  <h2 className="text-5xl md:text-7xl font-bold text-zinc-200">
+                  <h2 className="text-2xl md:text-5xl font-bold text-zinc-200">
                     NFT collection Website
                   </h2>
                   <a
                     href="#"
-                    className="text-2xl font-semibold underline decoration-2 underline-offset-4 text-zinc-300 hover:text-zinc-100 transition-colors w-fit"
+                    className="text-xl font-semibold underline decoration-2 underline-offset-4 text-zinc-300 hover:text-zinc-100 transition-colors w-fit"
                     aria-label="Visit NFT collection Website"
                   >
                     Visit
