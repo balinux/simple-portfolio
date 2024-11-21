@@ -14,7 +14,7 @@ interface SkillProps {}
 const Skill: FC<SkillProps> = ({}) => {
   return (
     <div>
-      <div className="grid grid-cols-3 gap-6">
+      <div className="md:grid md:grid-cols-3 gap-6 flex flex-col">
         <div className="flex">
           <BiLogoFlutter className="text-4xl mr-2 hover:text-blue-400" />
           <div className="flex-col">
