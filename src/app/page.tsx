@@ -69,7 +69,7 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <ModeToggle />
 
-        <div className="flex flex-row justify-between w-full">
+        <div className="flex flex-col sm:flex-row justify-between w-full">
           <div className="felx flex-col gap-8">
             <div className="text-3xl font-semibold -mt-5">
               Rio Juniyantara Putra
