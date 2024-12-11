@@ -6,6 +6,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "minimal-nextjs-portfolio-website.vercel.app",
       },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
     ],
   },
 };

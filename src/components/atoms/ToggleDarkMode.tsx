@@ -16,7 +16,7 @@ export default function ModeToggle() {
   const { setTheme } = useTheme();
 
   return (
-    <div className="flex gap-4 items-end w-full justify-end flex-col sm:flex-row">
+    <div className="container flex gap-4 items-end w-full justify-end flex-col sm:flex-row">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button
