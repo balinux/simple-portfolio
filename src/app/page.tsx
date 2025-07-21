@@ -25,6 +25,7 @@ import {
 import TimelineExperience from "@/components/organisms/TimelineExperience";
 import Skill from "@/components/organisms/Skill";
 import ModeToggle from "@/components/atoms/ToggleDarkMode";
+import NavHeader from "@/components/header";
 
 export default function Home() {
   const { setTheme } = useTheme();
@@ -67,7 +68,9 @@ export default function Home() {
   return (
     <div className="container mx-auto items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <ModeToggle />
+        <div className="w-full flex">
+          <NavHeader/>
+        </div>
 
         <div className="flex flex-col sm:grid grid-cols-2 justify-between w-full gap-4">
           <div className="flex flex-col gap-8">
@@ -75,6 +78,18 @@ export default function Home() {
               Rio Juniyantara Putra
             </div>
             <div className="text-md font-semibold -mt-6">Software Developer</div>
+
+            {/* about me */}
+            <div id="aboutme" className="text-3xl font-semibold hidden">About me</div>
+
+            <p className="text-sm mb-10 sm:mr-20 font-[family-name:var(--font-geist-mono)]">
+              I am a passionate and versatile developer with over +6 years of
+              JavaScript experience and a constant interest in learning new
+              technologies. I am currently learning the path to be a DevOps and
+              master tools or practices such as "Linux, AWS, CI/CD, Docker,
+              Kubernetes, Jenkins and Terraform" to perform cost optimized, reliable
+              and secure full software delivery and maintenance.
+            </p>
 
             {/* currently stack */}
             <div className="flex flex-col justify-center md:items-start mb-5 mt-10 lg:mx-0 opacity-100">
@@ -358,17 +373,7 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-            {/* about me */}
-            <div className="text-3xl font-semibold">About me</div>
 
-            <p className="text-sm mb-10 sm:mr-20 font-[family-name:var(--font-geist-mono)]">
-              I am a passionate and versatile developer with over +6 years of
-              JavaScript experience and a constant interest in learning new
-              technologies. I am currently learning the path to be a DevOps and
-              master tools or practices such as "Linux, AWS, CI/CD, Docker,
-              Kubernetes, Jenkins and Terraform" to perform cost optimized, reliable
-              and secure full software delivery and maintenance.
-            </p>
           </div>
           <div className="w-full flex justify-center items-center">
             <Image
@@ -388,12 +393,12 @@ export default function Home() {
 
 
         {/* Experience */}
-        <div className="text-3xl font-semibold">Experience</div>
+        <div id="experience" className="text-3xl font-semibold">Experience</div>
 
         <TimelineExperience experiences={myExperiences} />
 
         {/* Projects */}
-        <div className="text-3xl font-semibold mt-10">Projects</div>
+        <div id="project" className="text-3xl font-semibold mt-10">Projects</div>
 
         <div className="lg:grid grid-cols-3 gap-4 w-full">
           <div className=" flex items-center justify-center p-4">
@@ -544,7 +549,7 @@ export default function Home() {
         </div>
 
         {/* skills */}
-        <div className="text-3xl font-semibold mt-10">Skills</div>
+        <div id="skill" className="text-3xl font-semibold mt-10">Skills</div>
 
         <Skill />
       </main>
