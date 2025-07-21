@@ -23,7 +23,7 @@ const navigationLinks = [
 
 export default function NavHeader() {
   return (
-    <header className="px-4 md:px-6 w-full">
+    <header className="sticky top-0 z-50 bg-background px-4 md:px-6 w-full shadow">
       <div className="flex h-16 justify-between gap-4">
         {/* Left side */}
         <div className="flex gap-2">
@@ -46,15 +46,15 @@ export default function NavHeader() {
                   >
                     <path
                       d="M4 12L20 12"
-                      className="origin-center -translate-y-[7px] transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)] group-aria-expanded:translate-x-0 group-aria-expanded:translate-y-0 group-aria-expanded:rotate-[315deg]"
+                      className="origin-center -translate-y-[7px] transition-all duration-300 ease-&[cubic-bezier(.5,.85,.25,1.1)] group-aria-expanded:translate-x-0 group-aria-expanded:translate-y-0 group-aria-expanded:rotate-[315deg]"
                     />
                     <path
                       d="M4 12H20"
-                      className="origin-center transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.8)] group-aria-expanded:rotate-45"
+                      className="origin-center transition-all duration-300 ease-&[cubic-bezier(.5,.85,.25,1.8)] group-aria-expanded:rotate-45"
                     />
                     <path
                       d="M4 12H20"
-                      className="origin-center translate-y-[7px] transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)] group-aria-expanded:translate-y-0 group-aria-expanded:rotate-[135deg]"
+                      className="origin-center translate-y-[7px] transition-all duration-300 ease-&[cubic-bezier(.5,.85,.25,1.1)] group-aria-expanded:translate-y-0 group-aria-expanded:rotate-[135deg]"
                     />
                   </svg>
                 </Button>

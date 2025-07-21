@@ -72,17 +72,17 @@ export default function Home() {
           <NavHeader/>
         </div>
 
-        <div className="flex flex-col sm:grid grid-cols-2 justify-between w-full gap-4">
-          <div className="flex flex-col gap-8">
+        <div className="flex flex-col sm:grid grid-cols-2 justify-between w-full gap-4 min-h-[74vh]">
+          <div className="flex flex-col gap-2">
             <div className="text-3xl font-semibold mt-5 mb-0">
               Rio Juniyantara Putra
             </div>
-            <div className="text-md font-semibold -mt-6">Software Developer</div>
+            <div className="text-md font-semibold mt-6">Software Developer</div>
 
             {/* about me */}
             <div id="aboutme" className="text-3xl font-semibold hidden">About me</div>
 
-            <p className="text-sm mb-10 sm:mr-20 font-[family-name:var(--font-geist-mono)]">
+            <p className="text-sm mt-2 sm:mr-20 font-[family-name:var(--font-geist-mono)]">
               I am a passionate and versatile developer with over +6 years of
               JavaScript experience and a constant interest in learning new
               technologies. I am currently learning the path to be a DevOps and
@@ -375,9 +375,9 @@ export default function Home() {
             </div>
 
           </div>
-          <div className="w-full flex justify-center items-center">
+          <div className="w-full flex justify-center items-start">
             <Image
-              className="object-cover w-100 h-100 rounded-md sm:mr-40"
+              className="object-cover w-100 h-100 rounded-md sm:mr-40 filter grayscale hover:grayscale-0 transition duration-500"
               // src="https://nextjs.org/icons/next.svg"
               // src="https://images.unsplash.com/photo-1584339312444-6952d098e152"
               src="/rio.jpeg"
