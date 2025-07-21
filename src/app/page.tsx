@@ -26,6 +26,7 @@ import TimelineExperience from "@/components/organisms/TimelineExperience";
 import Skill from "@/components/organisms/Skill";
 import ModeToggle from "@/components/atoms/ToggleDarkMode";
 import NavHeader from "@/components/header";
+import Footer from "@/components/organisms/Footer";
 
 export default function Home() {
   const { setTheme } = useTheme();
@@ -77,7 +78,7 @@ export default function Home() {
             <div className="text-3xl font-semibold mt-5 mb-0">
               Rio Juniyantara Putra
             </div>
-            <div className="text-md font-semibold mt-6">Software Developer</div>
+            <div className="text-md font-semibold mt-6">Full Stack Developer</div>
 
             {/* about me */}
             <div id="aboutme" className="text-3xl font-semibold hidden">About me</div>
@@ -553,7 +554,10 @@ export default function Home() {
 
         <Skill />
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+
+      {/* footer */}
+      <Footer />
+      {/* <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
@@ -599,7 +603,7 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
-      </footer>
+      </footer> */}
     </div>
   );
 }
