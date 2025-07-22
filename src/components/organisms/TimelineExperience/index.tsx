@@ -26,12 +26,12 @@ const TimelineExperience: FC<TimelineExperienceProps> = ({ experiences }) => {
   // Sample data if no experiences are provided
   const sampleExperiences: ExperienceItem[] = [
     {
-      title: "Senior Developer",
-      company: "Tech Innovators Inc.",
-      period: "2020 - Present",
+      title: "Full Stack Developer | Mobile App Developer",
+      company: "Udayana University.",
+      period: "2018 - 2025",
       description:
         "Led a team of developers in creating cutting-edge web applications using React and Node.js.",
-      skills: ["React", "Node.js", "TypeScript", "AWS"],
+      skills: ["Laravel", "Node.js", "TypeScript", "Flutter", "Dart", "Next.js", "Tailwindcss", "Docker"],
     },
     {
       title: "Full Stack Developer",
