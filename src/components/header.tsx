@@ -11,6 +11,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
+
 import ModeToggle from "./atoms/ToggleDarkMode"
 
 // Navigation links array to be used in both desktop and mobile menus
@@ -19,6 +20,7 @@ const navigationLinks = [
   { href: "#experience", label: "Experience" },
   { href: "#skill", label: "Skill" },
   { href: "#project", label: "Project" },
+  { href: "https://yhotie.com", label:"Blog"}
 ]
 
 export default function NavHeader() {
