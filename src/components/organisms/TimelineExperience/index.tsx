@@ -71,7 +71,7 @@ const TimelineExperience: FC<TimelineExperienceProps> = ({ experiences }) => {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-gray-600 mb-4">{item.description}</p>
+              <p className="text-sm text-muted-foreground  mb-4">{item.description}</p>
               <div className="flex flex-wrap gap-2">
                 {item.skills.map((skill, skillIndex) => (
                   <Badge key={skillIndex} variant="secondary">
