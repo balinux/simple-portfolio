@@ -6,7 +6,7 @@ import { BiLink } from "react-icons/bi"
 
 export default function Footer() {
   return (
-    <footer className="mt-20 text-white">
+    <footer className="mt-20 ">
       <div className="w-full py-8">
         {/* Main Content */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
