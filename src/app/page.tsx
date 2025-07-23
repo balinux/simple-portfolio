@@ -64,7 +64,38 @@ export default function Home() {
       description: "USDI is a website that provides information about Udayana University's Information and Communication Technology resources.",
       github_link: "#"
     },
-    
+    {
+      type: "Web App",
+      app_name: "Cendekia LMS",
+      link: "https://github.com/balinux/cendekia-lms/",
+      image: "/cendekia-lms.png",
+      description: "Cendekia LMS is a Learning Management System (LMS) for online education.",
+      github_link: "https://github.com/balinux/cendekia-lms/"
+    },
+    {
+      type: "Bot",
+      app_name: "USDI Telegram Bot",
+      link: "https://www.instagram.com/p/BoEwoHZlMpd/?img_index=1",
+      image: "/usdi-bot.png",
+      description: "Built a Telegram bot using Node.js and KubeMQ to automate 500+ daily alerts for letters and complaints, reducing admin workload by 70%.",
+      github_link: "#"
+    },
+    {
+      type: "Web App",
+      app_name: "IMISSU2",
+      link: "https://imissu2.unud.ac.id/",
+      image: "/imissu2.png",
+      description: "Developed a Single Sign-On system using Keycloak, integrated with 10+ campus services. Designed and implemented the authentication UI with Tailwind CSS.",
+      github_link: "#"
+    },
+    {
+      type: "Web App",
+      app_name: "Techinfaq",
+      link: "https://github.com/balinux/TechInfaQ/",
+      image: "/techinfaq.jpeg",
+      description: "Developed an IoT-based fundraising system with Laravel and React.js, integrating ESP32 sensors and real-time MQTT communication for transparent donation tracking.",
+      github_link: "#"
+    },
   ]
 
   const myExperiences: ExperienceItem[] = [
@@ -73,7 +104,7 @@ export default function Home() {
       company: "Udayana University.",
       period: "2018 - 2025",
       description:
-        "I am a passionate and versatile developer with over +6 years of JavaScript experience and a constant interest in learning new technologies. I am currently learning the path to be a DevOps and master tools or practices such as \"Linux, AWS, CI/CD, Docker, Kubernetes, Jenkins and Terraform\" to perform cost optimized, reliable and secure full software delivery and maintenance.",
+        "As a Full Stack Developer at Universitas Udayana since 2018, I’ve led the development of cross-platform mobile applications using Flutter, including a campus app adopted by 3,000+ staff for academic services and attendance. I contributed to building a Keycloak-based SSO system integrating 10+ internal services, and developed the institutional USDI website using Laravel and MySQL. I also built a Telegram bot with Node.js and KubeMQ to automate 500+ daily notifications, reducing admin workload by 70%. Additionally, I implemented containerized deployments with Podman and optimized CI/CD pipelines using GitLab, significantly accelerating deployment processes.",
       skills: ["Laravel", "Node.js", "TypeScript", "Flutter", "Dart", "Next.js", "Tailwindcss", "Docker"],
     },
     {
@@ -104,16 +135,11 @@ export default function Home() {
             <div id="aboutme" className="text-3xl font-semibold hidden">About me</div>
 
             <p className="text-sm mt-2 sm:mr-20 font-[family-name:var(--font-geist-mono)]">
-              I am a passionate and versatile developer with over +6 years of
-              JavaScript experience and a constant interest in learning new
-              technologies. I am currently learning the path to be a DevOps and
-              master tools or practices such as "Linux, AWS, CI/CD, Docker,
-              Kubernetes, Jenkins and Terraform" to perform cost optimized, reliable
-              and secure full software delivery and maintenance.
+            Full Stack Developer with over 6 years of experience (2018–present) in end-to-end development of web and mobile applications. Proficient in frontend technologies (React, Next.js, Flutter, Tailwind CSS) and backend development (Node.js, JavaScript, PHP, Go, Laravel), with strong expertise in IoT, blockchain, and CI/CD pipeline optimization. Experienced in building scalable solutions for the education sector (Udayana University’s USDI Website, Mobile Attendance App) and innovative IoT/blockchain projects. Skilled in using Docker and Podman for containerization and service orchestration, MySQL database management, and Agile collaboration with cross-functional teams.
             </p>
             {/* download cv pdf */}
             <Button asChild className="w-40 mt-2">
-              <Link href="/resume.pdf" target="_blank"><BiDownload className="w-6 h-6" />Download CV</Link>
+              <Link href="/RioJuniyantaraPutra-CV.pdf" target="_blank"><BiDownload className="w-6 h-6" />Download CV</Link>
             </Button>
 
             {/* currently stack */}
