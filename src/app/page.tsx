@@ -104,7 +104,7 @@ export default function Home() {
       company: "Udayana University.",
       period: "2018 - 2025",
       description:
-        "As a Full Stack Developer at Universitas Udayana since 2018, I’ve led the development of cross-platform mobile applications using Flutter, including a campus app adopted by 3,000+ staff for academic services and attendance. I contributed to building a Keycloak-based SSO system integrating 10+ internal services, and developed the institutional USDI website using Laravel and MySQL. I also built a Telegram bot with Node.js and KubeMQ to automate 500+ daily notifications, reducing admin workload by 70%. Additionally, I implemented containerized deployments with Podman and optimized CI/CD pipelines using GitLab, significantly accelerating deployment processes.",
+        "As a Full Stack Developer at Universitas Udayana since 2018, I’ve built a cross-platform campus app (Flutter) used by 3,000+ staff, a Keycloak-based SSO system for 10+ services, and the USDI website with Laravel/MySQL. I also developed a Telegram bot (Node.js, KubeMQ) automating 500+ daily alerts, and streamlined deployments using Podman and GitLab CI/CD.",
       skills: ["Laravel", "Node.js", "TypeScript", "Flutter", "Dart", "Next.js", "Tailwindcss", "Docker"],
     },
     {
