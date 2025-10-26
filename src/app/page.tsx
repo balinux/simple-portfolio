@@ -3,32 +3,16 @@
 import Image from "next/image";
 
 import * as React from "react";
-import { Moon, MoonIcon, Sun } from "lucide-react";
-import { useTheme } from "next-themes";
 
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 
 import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+
 import TimelineExperience from "@/components/organisms/TimelineExperience";
 import Skill from "@/components/organisms/Skill";
-import ModeToggle from "@/components/atoms/ToggleDarkMode";
 import NavHeader from "@/components/header";
 import Footer from "@/components/organisms/Footer";
-import { DiDocker, DiLaravel } from "react-icons/di";
-import { FaDocker, FaDownload, FaGolang } from "react-icons/fa6";
+import { DiLaravel } from "react-icons/di";
+import { FaDocker, FaGolang } from "react-icons/fa6";
 import { SiN8N, SiNextdotjs } from "react-icons/si";
 import Link from "next/link";
 import { BiDownload } from "react-icons/bi";
@@ -36,7 +20,6 @@ import Project from "@/components/organisms/Project";
 import { ProjectType } from "@/lib/types";
 
 export default function Home() {
-  const { setTheme } = useTheme();
 
   type ExperienceItem = {
     title: string;
@@ -71,6 +54,14 @@ export default function Home() {
       image: "/cendekia-lms.png",
       description: "Cendekia LMS is a Learning Management System (LMS) for online education.",
       github_link: "https://github.com/balinux/cendekia-lms/"
+    },
+    {
+      type: "Web App",
+      app_name: "Fitras",
+      link: "https://fitras.yhotie.com",
+      image: "/fitras.png",
+      description: "Fitras – A website for tracking personal finances. Monitor your expenses, track income, set budgets, and get insights to take control of your money.",
+      github_link: "https://github.com/balinux/fitras/"
     },
     {
       type: "Bot",
@@ -135,7 +126,7 @@ export default function Home() {
             <div id="aboutme" className="text-3xl font-semibold hidden">About me</div>
 
             <p className="text-sm mt-2 sm:mr-20 font-[family-name:var(--font-geist-mono)]">
-            Full Stack Developer with over 6 years of experience (2018–present) in end-to-end development of web and mobile applications. Proficient in frontend technologies (React, Next.js, Flutter, Tailwind CSS) and backend development (Node.js, JavaScript, PHP, Go, Laravel), with strong expertise in IoT, blockchain, and CI/CD pipeline optimization. Experienced in building scalable solutions for the education sector (Udayana University’s USDI Website, Mobile Attendance App) and innovative IoT/blockchain projects. Skilled in using Docker and Podman for containerization and service orchestration, MySQL database management, and Agile collaboration with cross-functional teams.
+              Full Stack Developer with over 6 years of experience (2018–present) in end-to-end development of web and mobile applications. Proficient in frontend technologies (React, Next.js, Flutter, Tailwind CSS) and backend development (Node.js, JavaScript, PHP, Go, Laravel), with strong expertise in IoT, blockchain, and CI/CD pipeline optimization. Experienced in building scalable solutions for the education sector (Udayana University’s USDI Website, Mobile Attendance App) and innovative IoT/blockchain projects. Skilled in using Docker and Podman for containerization and service orchestration, MySQL database management, and Agile collaboration with cross-functional teams.
             </p>
             {/* download cv pdf */}
             <Button asChild className="w-40 mt-2">
